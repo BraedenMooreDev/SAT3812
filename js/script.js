@@ -1,15 +1,29 @@
-loginPopup = document.getElementById("loginPopup");
+loginPopup = document.getElementById("login-popup");
 
 function showLogin() {
     loginPopup.classList.add("active");
 }
 
-function closeLogin() {
-    loginPopup.classList.remove("active");
-};
+passwordInput = document.getElementById("password");
+visibilityIcon = document.getElementById("show-password");
 
-window.addEventListener("click", function(event) {
-    if (event.target == loginPopup) {
-        loginPopup.classList.remove("active");
+function togglePassVisible() {
+
+    if (passwordInput.type == "password") {
+        passwordInput.type = "text";
+        visibilityIcon.innerHTML = "<span class=\"material-symbols-outlined\">visibility_off</span>";
+    } else {
+        passwordInput.type = "password";
+        visibilityIcon.innerHTML = "<span class=\"material-symbols-outlined\">visibility</span>";
     }
-});
+}
+
+// function closeLogin() {
+//     loginPopup.classList.remove("active");
+// };
+
+// window.addEventListener("click", function(event) {
+//     if (event.target == loginPopup) {
+//         loginPopup.classList.remove("active");
+//     }
+// });

@@ -34,6 +34,7 @@ html, body {
     width: 46px;
     visibility: hidden;
     cursor:pointer;
+    user-select: none;
 }
 
 #login-btn {
@@ -46,6 +47,7 @@ html, body {
     font-weight: 800;
     font-size: 11px;
     cursor:pointer;
+    user-select: none;
 }
 
 #login-btn:hover {
@@ -59,6 +61,7 @@ html, body {
     vertical-align: middle;
     color: rgb(75, 75, 75);
     cursor:pointer;
+    user-select: none;
 }
 
 #gift:hover {
@@ -77,6 +80,7 @@ html, body {
     margin: 0px 15px 40px 15px;
     width: 60px;
     cursor:pointer;
+    user-select: none;
 }
 
 .skew {
@@ -165,6 +169,7 @@ html, body {
     margin: 8px 20px;
     transform: scale(1.5);
     cursor:pointer;
+    user-select: none;
 }
 
 .popup-content {
@@ -209,6 +214,15 @@ html, body {
     border-radius: 4px;
 }
 
+#show-password {
+
+    position: relative;
+    padding: 5px;
+    vertical-align: middle;
+    color: rgb(43, 43, 43);
+    user-select: none;
+}
+
 .continue {
 
     width: 80%;
@@ -222,6 +236,7 @@ html, body {
     color: white;
     background-color:rgb(255, 0, 119);
     cursor:pointer;
+    user-select: none;
 }
 
 .continue:hover {
