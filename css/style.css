@@ -217,6 +217,7 @@ html, body {
 #show-password {
 
     position: relative;
+    margin: 0;
     padding: 5px;
     vertical-align: middle;
     color: rgb(43, 43, 43);
